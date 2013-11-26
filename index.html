@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Book Club Form</title>
+<link href="css/general.css" rel="stylesheet">
+
 </head>
 <body>
 
-<header>The MUSIC Book Club</header>
-
+<h1>The MUSIC Book Club</h1>
 
 <form>
 	<div>
@@ -61,32 +62,39 @@
 	</div>
 	
 	<div>
-	<label for="why">Describe your favourite book</label>
-	<textarea for="why" class="input-text"></textarea>
+		<legend>What time of the day would be best to meet?</legend>
+		<input type="time" id="time" required>
 	</div>
 	
 	<div>
-		<legend>What time of the day would be best to meet?</legend>
-		<input type="time" id="time" 
+		<legend>How many books have you read this year?</legend>
+		<input type="number" id="books" pattern="[0=9]*" min="1" max="100">
+	</div>
 	
+
 	<fieldset>
 		<legend>How much do you love this genre?</legend>
 		
-		<input type="radio" id="extreme-poor" name="satisfaction">
-		<label for="extreme-poor">Extremely Dissatisfied</label>
-		
-		<input type="radio" id="dissatisfied" name="satisfaction">
-		<label for="dissatisfied">Dissatisfied</label>
-		
-		<input type="radio" id="neutral" name="satisfaction">
-		<label for="neutral">Neutral</label>
+		<input type="radio" id="extreme-good" name="satisfaction">
+		<label for="extreme-good">Love It</label>
 		
 		<input type="radio" id="satisfied" name="satisfaction">
-		<label for="satisfied">Satisfied</label>
+		<label for="satisfied">It's Alright</label>
 		
-		<input type="radio" id="extreme-good" name="satisfaction">
-		<label for="extreme-good">Extremely Satisfied</label>
+		<input type="radio" id="neutral" name="satisfaction">
+		<label for="neutral">Don't Know</label>
+		
+		<input type="radio" id="dissatisfied" name="satisfaction">
+		<label for="dissatisfied">Not that great</label>
+		
+		<input type="radio" id="extreme-poor" name="satisfaction">
+		<label for="extreme-poor">Hate It</label>		
 	</fieldset>
+	
+	<div>
+	<label for="why">Describe your favourite book</label>
+	<textarea for="why" class="input-text"></textarea>
+	</div>
 
 	
 	<button type="submit">Send!</button>

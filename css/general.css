@@ -5,6 +5,8 @@
 html {
 		background-image: url(../img/background.jpg);
 		background-attachment: fixed;
+		max-width: 1040px;
+		background-color: #fff;
 	}
 
 * {
@@ -13,9 +15,22 @@ html {
 	box-sizing: border-box;
 }
 
+h1 {
+	font-family: 'Futura';
+	text-align: center;
+	color: #C39;
+}
+
 label {
 	display: block;
 	cursor: pointer;
+	font-family: 'Futura';
+	padding-top: 1em;
+}
+
+legend {
+	font-family: 'Futura';
+	padding-top: .5em;
 }
 
 input  + label {
@@ -46,11 +61,10 @@ textarea {
 }
 
 button {
-	font-size: 2rem;
+	font-size: 1rem;
 	padding: 0.5em;
 	border-radius: 10px;
-	border: 2px solid #00f;
-	background-image: linear-gradient(to bottom, #00f, #33e);
+	background-image: linear-gradient(to bottom, #33c, #3c3);
 	color: #fff;
 	cursor: pointer;
 }
@@ -63,3 +77,11 @@ button {
 .input-error {
 	border: 3px solid #f33;
 }
+
+@media only screen and (min-width: 60em) {
+	
+	html {
+		margin: 2em 20%;
+		background-color: #fff;
+	}
+	
