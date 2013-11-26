@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+<body>
+
+<header>MUSIC</header>
+
+
+<form>
+	<div>
+		<label for="name">
+		Name
+		<strong class="error">Please fill in your name</strong>
+		</label>
+		<input type="text" id="name" class="input-text input-error" required>
+	</div>
+	
+	<div>
+		<label for="email">E-mail Address</label>
+		<input type="email" id="email" class="input-text" required maxlength="256">
+	</div>
+	
+	<div>
+		<label for="phone">Phone Number</label>
+		<input type="tel" id="tel" class="input-text" optional maxlength="20" minlength="10">
+	</div>
+	
+	<div>
+		<label for="address">Address</label>
+		<input type="text" id="address" class="input-text" required>
+	</div>
+	
+	<div>
+		<label for="city">City</label>
+		<input type="text" id="city" class="input-text" required>
+	</div>
+	
+	<div>
+		<label for="province">Province</label>
+		<select id="province">
+			<option selected>Ontario</option>
+			<option>Quebec</option>
+			<option></option>
+			<option>British Columbia</option>
+			<option>Alberta</option>
+			<option>Nova Scotia</option>
+			<option>New Brunswick</option>
+			<option>Manitoba</option>
+			<option>Saskatchewan</option>
+			<option>Prince Edawrd Island</option>
+			<option>Newfoundland & Labrador</option>
+		</select>
+	</div>
+	
+	<div>
+		<label for="postalcode">Postal Code</label>
+		<input type="text" id="postalcode" maxlength="7">
+	</div>
+	
+	<div>
+		<input type="checkbox" id="code" checked>
+		<label for="code">I love code!</label>
+	</div>
+	
+	<div>
+	<label for="why">Describe your favourite book</label>
+	<textarea for="why" class="input-text"></textarea>
+	</div>
+	
+	<fieldset>
+		<legend>How much do you love thi genre?</legend>
+		
+		<input type="radio" id="extreme-poor" name="satisfaction">
+		<label for="extreme-poor">Extremely Dissatisfied</label>
+		
+		<input type="radio" id="dissatisfied" name="satisfaction">
+		<label for="dissatisfied">Dissatisfied</label>
+		
+		<input type="radio" id="neutral" name="satisfaction">
+		<label for="neutral">Neutral</label>
+		
+		<input type="radio" id="satisfied" name="satisfaction">
+		<label for="satisfied">Satisfied</label>
+		
+		<input type="radio" id="extreme-good" name="satisfaction">
+		<label for="extreme-good">Extremely Satisfied</label>
+	</fieldset>
+	
+
+	
+	
+	
+	<button type="submit">Send!</button>
+</form>
+
+</body>
+</html>
